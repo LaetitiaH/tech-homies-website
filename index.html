@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Tech-Homies</title>
+</head>
+<body>
+
+<!--header-->
+<header id="header">
+    <h1>TECH-HOMIES</h1>
+    <nav class="nav">
+        <ol>
+            <li class="crumb"><a href="#text-content">Home</a></li>
+            <li class="crumb"><a href="#text-content">A propos de nous</a></li>
+            <li class="crumb"><a href="#services">Services</a></li>
+            <li class="crumb"><a href="#contact">Contact</a></li>
+        </ol>
+    </nav>
+</header>
+
+<!--Content-->
+<div class="content">
+    <section id="text-content">
+        <h2>Bienvenue chez Tech-Homies</h2>
+        <p>Nous croyons que l’IT ne devrait jamais être un frein à l’innovation.</p>
+        <p>Tout ce que nous faisons, nous le faisons de manière à garantir des applications durables.</p>
+        <p>Nous partageons nos savoir faire et nous réalisons des applications adaptées, maintenables et évolutives.</p>
+    </section>
+    <section id="img-content">
+        <img class="techhomies-picture"
+             src="images/weloveit.jpg"
+             alt="logo_techhomies"/>
+    </section>
+
+    <!--list-->
+    <section id="services">
+        <h2>Nos services</h2>
+        <div class="list_service">
+            <div class="element_list_service">
+                <img class="img-training"
+                     src="images/training.png"
+                     alt="training"/>
+                <h3>Formation / Accompagnement</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, recusandae tempora! Ab architecto
+                    dolorum maiores odit perspiciatis tempore. Aperiam asperiores aspernatur, beatae iste labore
+                    obcaecati omnis reiciendis repudiandae velit veniam.</p>
+            </div>
+            <div class="element_list_service">
+                <img class="img-audit"
+                     src="images/audit.png"
+                     alt="audit"/>
+                <h3>Audit / Conseil</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, recusandae tempora! Ab architecto
+                    dolorum maiores odit perspiciatis tempore. Aperiam asperiores aspernatur, beatae iste labore
+                    obcaecati omnis reiciendis repudiandae velit veniam.</p>
+            </div>
+            <div class="element_list_service">
+                <img class="img-pencil"
+                     src="images/pencil.png"
+                     alt="pencil"/>
+                <h3>Développement d’applications</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, recusandae tempora! Ab architecto
+                    dolorum maiores odit perspiciatis tempore. Aperiam asperiores aspernatur, beatae iste labore
+                    obcaecati omnis reiciendis repudiandae velit veniam.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact">
+        <h2>Get in touch</h2>
+        <form method="post" action="traitement.php">
+            <div class="form">
+                <p>
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Votre prénom" size="30" maxlength="20"/>
+                </p>
+                <p>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Votre email" size="40" maxlength="40"/>
+                </p>
+                <p class="message">
+                    <label for="message"></label>
+                    <textarea name="message" id="message" placeholder="Votre message"></textarea>
+                </p>
+            </div>
+            <div class="form">
+                <p>
+                    <label for="telephone"></label>
+                    <input type="tel" name="telephone" id="telephone" placeholder="Votre téléphone" size="40"
+                           maxlength="40"/>
+                </p>
+                <p>
+                    <label for="subject"></label>
+                    <input type="text" name="subject" id="subject" placeholder="Sujet" size="30" maxlength="20"/>
+                </p>
+            </div>
+            <div class="input">
+                <input class="submit" type="submit" value="Envoyer"/>
+            </div>
+        </form>
+    </section>
+
+    <!--footer-->
+    <footer class="footer">
+        <p>Copyright © 2020 Tech-Homies . All Rights Reserved.</p>
+        <img class="linkedin-picture"
+             src="images/linkedin.png"
+             alt="logo_linkedin">
+            </footer>
+</div>
+<div class="scroll_up"></div>
+</body>
+</html>
