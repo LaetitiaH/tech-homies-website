@@ -1,0 +1,26 @@
+{
+  "name": "tech-homies-website",
+  "version": "1.0.0",
+  "description": "Tech-Homies website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaetitiaH/tech-homies-website.git"
+  },
+  "author": "Laetitia H",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/LaetitiaH/tech-homies-website/issues"
+  },
+  "homepage": "https://github.com/LaetitiaH/tech-homies-website#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "sass": "^1.26.7"
+  }
+}
