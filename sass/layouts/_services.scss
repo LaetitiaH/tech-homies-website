@@ -1,0 +1,22 @@
+.services__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1040px;
+}
+
+.element_list_service {
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom: 46px;
+  text-align: center;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  p {
+    text-align: left;
+  }
+}

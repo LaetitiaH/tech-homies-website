@@ -1,0 +1,47 @@
+/*Contact*/
+
+#contact {
+  background-color: $background-contact;
+  width: 100%;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+
+  .form__element {
+    display: flex;
+    flex-direction: column;
+    margin-right: -96px;
+    margin-left: 72px;
+  }
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.submit {
+  margin-bottom: 17px;
+}
+
+.message {
+  display: flex;
+  align-self: flex-end;
+
+  textarea {
+    width: 330px;
+    @include input-form;
+  }
+}
+
+input {
+  width: 135px;
+  @include input-form;
+}

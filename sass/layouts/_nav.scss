@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav__link__name {
+  margin-right: 50px;
+  text-transform: uppercase;
+
+  a {
+    color: #fff;
+    font-family: $subtitle-font;
+    font-size: $nav-font-size;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
