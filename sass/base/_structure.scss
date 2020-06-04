@@ -1,0 +1,62 @@
+/* Page Structure*/
+#text-content {
+  grid-area: text-content;
+}
+
+#img-content {
+  grid-area: img-content;
+}
+
+#services {
+  grid-area: services;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50% 20% 50% -1px;
+  grid-template-areas: ". text-content img-content . " ". services services . " "contact contact contact contact" "footer footer footer footer";
+  margin-top: 65px;
+  justify-items: center;
+  align-items: center;
+}
+
+#services h2 {
+  text-align: center;
+  font-size: $services-font-sizes;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: $subtitle-font;
+  text-transform: uppercase;
+  color: $second-title-color;
+  font-size: $title-font-size;
+}
+
+h3 {
+  font-size: $content-font-size;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $subtitle-color;
+  font-weight: 600;
+  line-height: 1.1;
+  text-align: center;
+}
+
+p {
+  font-family: $text-font;
+  color: $text-color;
+  font-size: $content-font-size;
+  line-height: 26px;
+  border-top: 1px solid $border-text;
+  padding-top: 10px;
+}
