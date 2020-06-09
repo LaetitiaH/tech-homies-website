@@ -29,6 +29,15 @@
   align-items: center;
 }
 
+#img-content {
+  transform: translatey(0%);
+  transition: transform 400ms ease-in;
+
+  &:active {
+    transform: translatey(600%);
+  }
+}
+
 #services h2 {
   text-align: center;
   font-size: $services-font-sizes;

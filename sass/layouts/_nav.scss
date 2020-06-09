@@ -19,8 +19,31 @@
     font-size: $nav-font-size;
     text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
+    &:hover .underline-nav {
+      animation: underline 0.4s 20ms forwards;
     }
+  }
+}
+
+.underline-nav {
+  opacity: 0;
+  background: #ffffff;
+  width: 40%;
+  height: 1px;
+}
+
+@keyframes underline {
+  0% {
+    transform: translatex(0%);
+  }
+  45% {
+    transform: translatex(80%);
+  }
+  60% {
+    transform: translatex(100%);
+  }
+  100% {
+    transform: translatex(170%);
+    opacity: 1;
   }
 }

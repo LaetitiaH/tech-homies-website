@@ -9,6 +9,12 @@
   }
 }
 
+*:focus {
+  outline: none;
+  border: 1px solid $focus-color;
+}
+
+
 form {
   display: flex;
   justify-content: center;
@@ -20,6 +26,7 @@ form {
     margin-left: 72px;
   }
 }
+
 
 .input {
   display: flex;
@@ -44,4 +51,20 @@ form {
 input {
   width: 135px;
   @include input-form;
+
+  &:not(:focus):invalid {
+    background: $invalid-form-background-color;
+    border: 1px solid $focus-color;
+    color: $invalid-text-color;
+    animation: invalid-data 100ms cubic-bezier(.4, .1, .6, .9) 2;
+  }
+}
+
+@keyframes invalid-data {
+  25% {
+    transform: translateX(2%);
+  }
+  75% {
+    transform: translateX(2%);
+  }
 }
