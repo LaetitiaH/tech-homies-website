@@ -1,21 +1,23 @@
 .header {
-  background: $header-color;
-  position: fixed;
-  right: 0px;
-  top: 0;
-  width: 100%;
-  margin-top: 0;
-  display: flex;
-  justify-content: space-around;
+    background: $header-color;
+    position: fixed;
+    z-index: 1;
+    right: 0px;
+    top: 0;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
 
-  h1 {
-    color: $title-color;
-    font-size: $title-font-size;
-    font-family: $title-font;
-    transform: scale(1);
-    transition : transform 400ms;
-    &:hover {
-      transform: scale(1.15);
+    h1 {
+        color: $title-color;
+        font-size: $title-font-size;
+        font-family: $title-font;
+        transform: scale(1);
+        transition: transform 400ms;
+
+        &:hover {
+            transform: scale(1.15);
+        }
     }
-  }
 }
